@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.palanquin {
+  font-family: "Palanquin", sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(90deg, #c52323, #d51163, #1119d5);
+  -webkit-background-clip: text; /* For Safari and Chrome */
+  -webkit-text-fill-color: transparent; /* For Safari and Chrome */
+  background-clip: text; /* For Firefox */
+  color: transparent; /* Fallback for browsers that don't support gradient text */
+}
+.brittany {
+  font-family: "Brittany", cursive;
+}
+@font-face {
+  font-family: "Brittany";
+  src: url("./BrittanySignature.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.fonti {
+  font-family: "Brittany", sans-serif; /* You can add a fallback font */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-out forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 1s ease-out forwards;
+}
+
+/* Global Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #161616; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded track corners */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e50f19; /* Color of the scrollbar handle */
+  border-radius: 10px; /* Rounded scrollbar handle */
+  border: 3px solid #161616; /* Adds padding-like space around the handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a9a9a9; /* Hover color for the scrollbar handle */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Makes the scrollbar smaller */
+  scrollbar-color: #3306ac #161616; /* Thumb color and track color */
+}
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px; /* Narrow scrollbar for smaller screens */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #a9a9a9;
+  }
+}
+.scrollable {
+  overflow-y: auto; /* Enables vertical scrolling */
+  scrollbar-width: thin;
+  scrollbar-color: #3306ac #161616;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: #3306ac;
+}
