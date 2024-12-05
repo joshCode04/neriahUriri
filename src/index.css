@@ -11,20 +11,21 @@
 
 .gradient {
   background: linear-gradient(90deg, #c52323, #d51163, #1119d5);
-  -webkit-background-clip: text; /* For Safari and Chrome */
-  -webkit-text-fill-color: transparent; /* For Safari and Chrome */
-  background-clip: text; /* For Firefox */
-  color: transparent; /* Fallback for browsers that don't support gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .brittany {
   font-family: "Brittany", cursive;
 }
 @font-face {
   font-family: "Brittany";
-  src: url("./BrittanySignature.ttf") format("truetype");
+  src: url("/BrittanySignature.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 .fonti {
   font-family: "Brittany", sans-serif; /* You can add a fallback font */
   font-size: 24px; /* Adjust size as needed */
